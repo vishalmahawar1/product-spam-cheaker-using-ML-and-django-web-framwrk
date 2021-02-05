@@ -1,0 +1,34 @@
+{% extends "spm_ck/base.html" %}
+{% load static %}
+<div class="text-dark">
+{% block title %}
+  {{ product.name }}
+{% endblock %}
+</div>
+
+{% block content %}
+<div class="text-dark">
+  <div class="product-detail">
+    <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'img/no_image.png' %}{% endif %}">
+    <h1>{{ product.name }}</h1>
+    <h2><a href="{{ product.category.get_absolute_url }}" class="text-info">{{ product.category }}</a></h2>
+    <p class="price text-dark" >${{ product.price }}</p>
+    {{ product.description|linebreaks }}
+    <h3><a href="/{{ product.id }}/create_order" class="text-info effect-underline" >Rate It</a></h3>
+    <h4>
+    {{product.rate}}
+    
+    {% for i in A %}
+            {{i.customer.username}}<br> 
+	    {{ i.rate}}<br>
+	    <b>Rating</b> {{ i.rated_no }}<br>
+            {{i.date_created}}<br>
+	    <hr>
+  
+    {% endfor %}
+     
+    </h4>
+
+  </div>
+</div>
+{% endblock %}

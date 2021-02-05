@@ -1,0 +1,19 @@
+vishal
+vishal (multiple reviews on same product) 
+vishal (multiple reviews on same product) 
+vishal (multiple reviews on same product) 
+vishal (multiple reviews on same product) 
+piyush (user's review contain product name more than 4 times) 
+vishal (content similar) with : 
+vishal
+vishal (multiple reviews on same product) 
+vishal (multiple reviews on same product) 
+vishal (multiple reviews on same product) 
+vishal (content similar) with : 
+vishal
+vishal (user's review contain product name ) 
+vishal (content similar) with : 
+vishal
+vishal (user's review contain product name more than 4 times) 
+vishal (content similar) with : 
+vishal

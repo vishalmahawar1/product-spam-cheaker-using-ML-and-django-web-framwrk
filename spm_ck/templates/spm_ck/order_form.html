@@ -1,0 +1,31 @@
+{%  extends 'spm_ck/base.html' %}
+{% load static %}
+{% block content %}
+
+
+<div class="row">
+	<div class="col-md-6">
+		<div class="card card-body">
+
+			<form action="" method="POST">
+				{% csrf_token %}
+				{{ form.management_form }}
+				
+				{{form.rated_product}}
+				{{form.customer}}
+				<b>Review</b> : {{form.rate}}
+				<hr>
+				<b>Rating</b> : {{form.rated_no}}
+				<hr>
+				
+                                
+				
+				<input type="submit" name="Submit">
+			</form>
+
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}
